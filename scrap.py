@@ -21,14 +21,11 @@ for source in sources:
         if class_str == 'organization-card__name':
             # All Extended ASCII characters are replaced with spaces to avoid inconsistencies
             name = re.sub('[^0-9a-zA-Z]+', ' ', name.text)
-            organizations[name] = organizations.get(name, [0, []])
-            organizations[name][0] += 1
-            organizations[name][1].append(source[0])
         else:
             name = re.sub('[^0-9a-zA-Z]+', ' ', name.a.text)
-            organizations[name] = organizations.get(name, [0, []])
-            organizations[name][0] += 1
-            organizations[name][1].append(source[0])
+        organizations[name] = organizations.get(name, [0, []])
+        organizations[name][0] += 1
+        organizations[name][1].append(source[0])
 
 with open('Results.csv', 'w', newline='') as csv_write_file:
     csv_writer = csv.writer(csv_write_file)
