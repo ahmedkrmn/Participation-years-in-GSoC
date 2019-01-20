@@ -5,10 +5,7 @@
 - [csv](https://docs.python.org/3/library/csv.html)
 - [re](https://docs.python.org/3/library/csv.html)
 
-You can install the libraries which don't come pre-installed using pip:
-
-```pip install requests bs4 lxml```
-
+A guide on installing python packages can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 ---
 #### Output CSV results file:
 
