@@ -6,6 +6,7 @@
 - [re](https://docs.python.org/3/library/csv.html)
 
 A guide on installing python packages can be found [here](https://packaging.python.org/tutorials/installing-packages/).
+
 ---
 #### Output CSV results file:
 
