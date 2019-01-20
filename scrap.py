@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 sources = []  # [GSoC year, HTML Source]
 organizations = {}  # {Organization: [No of participations, [Participating Years]}
 
-with open('GSoC_links.csv', 'r') as csv_read_file:
+with open('GSoC_archives.csv', 'r') as csv_read_file:
     csv_reader = csv.reader(csv_read_file)
     next(csv_reader)  # Skip the header
     for row in csv_reader:
