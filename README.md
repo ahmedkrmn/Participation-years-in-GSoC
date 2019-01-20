@@ -5,7 +5,7 @@
 - [csv](https://docs.python.org/3/library/csv.html)
 - [re](https://docs.python.org/3/library/csv.html)
 
-You can use install the libraries which don't come pre-installed using pip:
+You can install the libraries which don't come pre-installed using pip:
 
 ```pip install requests bs4 lxml```
 
