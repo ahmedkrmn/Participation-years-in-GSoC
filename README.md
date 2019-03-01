@@ -3,7 +3,7 @@
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 - [lxml](https://lxml.de/)
 - [csv](https://docs.python.org/3/library/csv.html)
-- [re](https://docs.python.org/3/library/csv.html)
+- [re](https://docs.python.org/3/library/re.html)
 
 A guide on installing python packages can be found [here](https://packaging.python.org/tutorials/installing-packages/).
 
