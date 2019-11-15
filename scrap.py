@@ -13,7 +13,7 @@ with open('GSoC_archives.csv', 'r') as csv_read_file:
         sources.append([row[0], requests.get(row[1]).text])
 
 for source in sources:
-    soup = BeautifulSoup(source[1], 'lxml')
+    soup = BeautifulSoup(source[1], 'html.parser')
     # GSoC 2016 and later is scraped from the new archive website while older editions are from Google Melange Archive.
     class_str = 'organization-card__name' if int(source[0]) > 2015 else 'mdl-list__item-primary-content'
     names = soup.find_all(class_=class_str)
