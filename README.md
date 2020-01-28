@@ -8,10 +8,10 @@ A guide on installing python packages can be found [here](https://packaging.pyth
 
 ---
 
-##### Available Tables:
+#### Available Tables:
 
 1. [Number of Accepted Projects Per Organization in 2019](https://github.com/ahmedkrmn/Participation-years-in-GSoC#number-of-accepted-projects-per-organization-in-2019)
-2. [Participation Years Per Organization (2019 - 2009)](https://github.com/ahmedkrmn/Participation-years-in-GSoC#participation-years-per-organization)
+2. [Participation Years Per Organization (2019 - 2009)](https://github.com/ahmedkrmn/Participation-years-in-GSoC#participation-years-per-organization-2019---2009)
 
 ---
 
