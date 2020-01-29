@@ -23,17 +23,18 @@ organizations = {}
 
 for name in names:
     organizations[name.h4.text] = gsoc_archive_url + name["href"]
-#organizations = {organization_name: organization_html_page}
+#organizations = {organization_name: organization_url}
 
 for org_name, org_url in organizations.items():
     print("parsing " + org_name)
     soup = BeautifulSoup(requests.get(org_url).text, 'html.parser')
     names = soup.find_all(class_="archive-project-card")
-    organizations[org_name] = len(names)
-#organizations = {organization_name: organization_project_count}
+    organizations[org_name] = [org_url, len(names)]
+#organizations = {organization_name: [organization_url, organization_project_count]}
 
 with open('organization_projects.csv', 'w', newline='') as csv_write_file:
     csv_writer = csv.writer(csv_write_file)
-    csv_writer.writerow(['Organization', 'Number of Projects in ' + year])
-    for org_name, project_count in sorted(organizations.items(), key=lambda x: (-x[1], x[0])):
-        csv_writer.writerow([org_name, project_count])
+    csv_writer.writerow(
+        ['Organization', 'URL', 'Number of Projects in ' + year])
+    for org_name, [org_url, project_count] in sorted(organizations.items(), key=lambda x: (-x[1][1], x[0])):
+        csv_writer.writerow([org_name, org_url, project_count])
